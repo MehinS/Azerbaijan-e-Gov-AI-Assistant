@@ -14,8 +14,8 @@ It demonstrates how AI can be used to:
 
 ## Key features
 
-- LLM-based intent detection (OpenAI)g
-- Modular agent architecture (tax, marriage, legal)
+- LLM-based intent detection (OpenAI)
+- Modular agent architecture (diploma recognition, marriage registration, legal question)
 - Retrieveal-Augemented Generation (RAG) for legal queries
 - Basic privacy filtering
 - Proactive notification simulation
@@ -44,7 +44,7 @@ User -> FastAPI -> Orchestrator -> Agents -> (RAG / Knowledge base)
 ## Example Queries
 
 - "I lost my passport, do I have to pay fine?"
-- "I want to declare my taxes"
+- "I want to get my foreign diploma recognized"
 - "How do I register a marriage?"
 
 ---
@@ -87,7 +87,7 @@ http://127.0.0.1:8000/docs
 
 ## Future Improvements
 
-- Integration with real APIs (e.g. Digital Bridge)
+- Integration with real APIs (e.g. digital.bridge)
 - Advanced RAG with vector databases
 - User authentication and personlization
 - Real-time notifications
