@@ -4,12 +4,12 @@ knowledge = [
     {
         "topic" : "lost_passport_penalty",
         "keywords" : ["lost passport","passport lost","lose passport","fine passport"],
-        "content" : "In case of loss of a passport, a fine may be applied according to administrative regulations. The amount depends on the circumstances and local laws."
+        "content" : "Hazırda Azərbaycan Respublikasının qanunvericiliyinə əsasən, ümumvətəndaş pasportunun itirilməsi halında inzibati cərimə tətbiq edilmir."
     },
     {
         "topic" : "tax_obligation",
         "keywords" : ["tax","declare tax","tax payment"],
-        "content" : "Citizens are required to declare income and pay applicable taxes in accordance with national tax legislation."
+        "content" : "Vergi hesabatı (bəyannamə) Vergi Məcəlləsində göstərilən müddətlərdə və müəyyən edilmiş formada vergi orqanına təqdim edilməlidir."
     }
 ]
 
