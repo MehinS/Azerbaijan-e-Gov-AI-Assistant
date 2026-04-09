@@ -2,9 +2,9 @@
 
 **Giriş**
 
-Bu sənəd dövlət qurumlarında tətbiq olunan süni intellekt (AI) əsaslı sistemlərin texniki və arxitektur baxımından qiymətləndirilməsi məqsədi daşıyır. Müasir rəqəmsal hökumət yanaşmalarında AI texnologiyaları vətəndaş xidmətlərinin optimallaşdırılması, qərarvermə proseslərinin təkmilləşdirilməsi və məlumatların effektiv istifadəsi baxımından mühim rol oynayır.
+Bu sənəd dövlət qurumlarında tətbiq olunan süni intellekt (AI) əsaslı sistemlərin texniki və arxitektur baxımdan qiymətləndirilməsi məqsədi daşıyır. Müasir rəqəmsal hökumət yanaşmalarında AI texnologiyaları vətəndaş xidmətlərinin optimallaşdırılması, qərarvermə proseslərinin təkmilləşdirilməsi və məlumatların effektiv istifadəsi baxımından mühüm rol oynayır.
 
-Bu çərçivədə AI həllərinin yalnız funksional deyil, həm də təhlükəsizlik, məxfilik, inteqrasiya və etik istifadə prinsiplərinə uyğunluğu xüsusi əhəmiyyət daşıyır. 
+Bu çərçivədə AI həllərinin yalnız funksional deyil, həm də təhlükəsizlik, məxfilik, inteqrasiya və etik istifadə prinsiplərinə uyğunluğu xüsusi əhəmiyyət daşıyır.
 
 1. **Arxitektur yanaşma**
 
@@ -12,10 +12,10 @@ AI əsaslı dövlət sistemləri modul və genişlənə bilən arxitektura əsas
 
 **Əsas komponentlər:**
 
-- **Orchestrator:&#32;**istifadəçi sorğularının təhlili və uyğun xidmətə yönləndirilməsi
-- **Service agents:&#32;**konkret xidmətlər üzrə funksionallıq (məsələn, e-tax, hüquqi məlumatlar və s.)
-- **Data Layer:** qanunvericilik bazaları və digər məlumat mənbələri
-- **APIs:&#32;**mövcud dövlət sistemləri ilə əlaqə
+- Orchestrator: istifadəçi sorğularının təhlili və uyğun xidmətə yönləndirilməsi
+- Service agents: konkret xidmətlər üzrə funksionallıq (məsələn, e-tax, hüquqi məlumatlar və s.)
+- Data Layer: qanunvericilik bazaları və digər məlumat mənbələri
+- APIs: mövcud dövlət sistemləri ilə əlaqə
 
 Bu yanaşma mikroservis prinsiplərinə uyğundur və sistemin müstəqil inkişafını və idarə olunmasını təmin edir.
 
@@ -34,8 +34,10 @@ RAG yanaşması xüsusilə dövlət sistemlərində vacibdir, çünki bu üsul g
 AI sistemlərində məlumat keyfiyyəti kritik rol oynayır:
 
 - məlumatların aktuallığı və doğruluğu təmin edilməlidir
-- mənbələr (məsələn, hüquqi bazalar) etibarlı olmalıdır
+- mənbələr etibarlı olmalıdır
 - model cavabları audit edilə bilən olmalıdır
+
+Bu kontekstdə rəsmi hüquqi məlumat mənbələri, məsələn e-qanun, sistemin düzgün və etibarlı cavablar təqdim etməsi üçün əsas rol oynayır.
 
 Model seçimi zamanı isə aşağıdakılar nəzərə alınmalıdır:
 
@@ -53,11 +55,11 @@ Bu baxımdan:
 - vahid identifikasiya sistemləri ilə uyğunluq təmin olunmalıdır
 - müxtəlif qurumlar arasında məlumat mübadiləsi standartlaşmalıdır
 
-Belə yanaşma vahid rəqəmsal hökumət ekosisteminin formalaşmasında xidmət edir.
+Belə yanaşma vahid rəqəmsal hökumət ekosisteminin formalaşmasına xidmət edir.
 
 5. **Təhlükəsizlik və məxfilik**
 
-Dövlət AI sistemlərində məlumat təhlükəsizlik prioritetdir.
+Dövlət AI sistemlərində məlumat təhlükəsizliyi prioritetdir.
 
 Əsas prinsiplər:
 
@@ -66,7 +68,7 @@ Dövlət AI sistemlərində məlumat təhlükəsizlik prioritetdir.
 - giriş nəzarəti (access control)
 - audit və monitorinq mexanizmləri
 
-Bəzi hallarda AI modellərinin on-premise yerləşdirilməsi və ya hibrid yanaşmaq daha məqsədəuyğun ola bilər.
+Bəzi hallarda AI modellərinin on-premise və ya hibrid şəkildə yerləşdirilməsi daha məqsədəuyğun ola bilər.
 
 6. **Etik istifadə və risklər**
 
@@ -147,4 +149,23 @@ Bu baxımdan, sistemin inkişafı üçün aşağıdakı istiqamətlər tövsiyə
 - RAG yanaşması ilə hüquqi və normativ məlumatların daha dəqiq təqdim olunması
 - proaktiv bildiriş və tövsiyə sistemlərinin əlavə edilməsi
 
-Bu cür inkişaf yanaşmaları AI əsaslı dövlət xidmətlərinin daha effektiv, çevik və istifadəçi yönümlü olmasına imkan verə bilər. 
+
+11. **Yerli platformalarla inteqrasiya**
+
+Azərbaycan kontekstində AI əsaslı dövlət sistemlərinin effektiv fəaliyyəti mövcud rəqəmsal platformalarla inteqrasiyadan birbaşa asılıdır. Bu baxımdan "digital.bridge" platforması dövlət sistemləri arasında məlumat mübadiləsi və xidmət inteqrasiyası üçün əsas rol oynaya bilər.
+
+AI əsaslı orkestrator sistemi istifadəçi sorğularını təhlil etdikdən sonra uyğun dövlət xidmətinə yönləndirməni məhz bu cür inteqrasiya platforması ilə həyata keçirə bilər. Bu yanaşma aşağıdakı imkanları yaradır:
+
+- Müxtəlif dövlət qurumlarının xidmətlərinə vahid interfeys üzərindən çıxış
+- API əsaslı inteqrasiya xidmətlərinin avtomatlaşdırılması
+- məlumatların təhlükəsiz və standartlaşdırılmış ötürülməsi
+
+Dil məsələsinə gəldikdə isə, Azərbaycan dili üçün AI modellərinin dəstəyi xüsusi əhəmiyyət daşıyır. Bu məqsədlə:
+
+- Çoxdilli (Multilingual) LLM modellərindən istifadə
+- yerli məlumatlarla modelin uyğunlaşdırılması
+- hüquqi və inzibati terminologiyanın interpretasiyası
+
+təmin olunmalıdır.
+
+Bu yanaşma həm texniki inteqrasıyanı, həm də istifadəçi ilə effektiv ünsiyyəti təmin edərək AI əsaslı dövlət xidmətlərinin real tətbiqini mümkün edir.

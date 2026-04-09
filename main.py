@@ -22,6 +22,9 @@ def proactive():
         "alert": "Passportunuzun vaxtinin bitmeyine 6 ay qalib. Dəyişməyi nəzərdə tutun."
     }
 
+#simple memory (demo only)
+last_intent = None
+
 @app.post("/chat")
 def chat(request: ChatRequest):
     try:
@@ -32,6 +35,11 @@ def chat(request: ChatRequest):
 
         # intent detection
         intent = detect_intent(safe_input)
+
+        if intent == "unknown" and last_intent is not None:
+            intent = last_intent
+        else:
+            last_intent = intent
 
         if intent == "diploma":
             return handle_diploma_recognition(safe_input)
