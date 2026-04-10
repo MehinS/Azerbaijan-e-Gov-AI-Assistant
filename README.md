@@ -1,104 +1,122 @@
 # AI-Assisted Government Service Prototype (Bürokratt-inspired)
 
 ## Overview
-This project is a prototype of an AI-assisted government service system inspired by Estonia's Bürokratt initiative
+This project presents a prototype of an AI-assisted government service platform, inspired by Estonia’s Bürokratt initiative.
 
-It demonstrates how AI can be used to:
+It demonstrates how modern AI technologies can be applied to:
 
-- understand user requests
-- route them to appropriate services
-- retrieve relevant legal information
-- support modular and scalable government AI architecture
+- understand and interpret citizen requests
+- route queries to relevant government services
+- retrieve reliable legal and administrative information
+- support a modular, scalable digital government architecture
 
----
-
-## Key features
-
-- LLM-based intent detection (OpenAI)
-- Modular agent architecture (diploma recognition, marriage registration, legal question)
-- Retrieveal-Augemented Generation (RAG) for legal queries
-- Basic privacy filtering
-- Proactive notification simulation
-- FastAPI backend
+The system is designed as a conceptual and technical foundation for next-generation AI-powered public services.
 
 ---
 
-## Architecture
+## Key capabilities
 
-User -> FastAPI -> Orchestrator -> Agents -> (RAG / Knowledge base)
-
-### Components
-
-- **Orchestrator**: detects user intent using LLM
-- **Agents**:
-    - Diploma Recognition Agent
-    - Marriage Agent
-    - Legal Question Agent
-- **Knowledge Base**:
-    - keyword-based retrieval simulating legal sources (e.g. e-qanun)
-- **Privacy Filter**:
-    - removes sensitive data before processing
+- LLM-based intent understanding for natural language user queries
+- Orchestrator-based architecture for intelligent request routing
+- Modular service agents (diploma recognition, marriage registration, legal question)
+- Retrieveal-Augemented Generation (RAG) for grounded responses
+- Basic privacy filtering for sensitive input handling
+- Proactive service simulation (notifications and recommendations)
+- API-first backend design (FastAPI)
 
 ---
 
-## Example Queries
+## System architecture
 
-- "I lost my passport, do I have to pay fine?"
-- "I want to get my foreign diploma recognized"
-- "How do I register a marriage?"
+User → API Layer (FastAPI) → Orchestrator → Service Agents → (RAG / Knowledge Base) → Response
+
+### Core components
+
+- Orchestrator: 
+    - Analyzes user intent using LLMs
+    - Routes requests to appropriate service agents
+- Service Agents:
+    - Domain-specific modules (e.g., legal information, diploma recognition, civil services)
+    - Encapsulate service logic and response generation
+- Knowledge Layer:
+    - Retrieval component simulating integration with official legal and administrative sources (e.g., e-qanun)
+    - Designed for extensibility toward semantic/vector-based retrieval systems
+- RAG Pipeline:
+    - Combines retrieved context with LLM generation
+    - Improves factual grounding and response reliability
+- Privacy Filter:
+    - Applies basic preprocessing to remove or mask sensitive user data
+---
+
+## Example Use Cases
+
+- “Do I need to pay a fine if I lost my passport?”
+- “How can I recognize my foreign diploma?”
+- “What is the process for marriage registration?”
 
 ---
 
-## Tech Stack
+## Technology Stack
 
 - Python
 - FastAPI
 - OpenAI API (LLM)
-- Simple RAG implementation
+- Lightweight RAG pipeline (designed for extensibility)
 
 ---
 
-## How to Run
+## Production-Oriented Design Considerations
 
-1. Clone the repository
-2. Create virtual environment
-3. Install dependencies:
-pip install -r requirements.txt
+Although this is a prototype, the system is designed with real-world government deployment in mind:
 
-4. Create '.env' file:
-OPENAI_API_KEY=your_api_key_here
+- Modular architecture aligned with microservice principles
+- API-based integration approach (e.g.,digital.bridge platform)
+- Extensible RAG pipeline for trusted data sources
+- Designed for deployment in on-premise or hybrid government environments
+- Designed to scale into multi-agency service orchestration
 
-5. Run the app:
-python -m uvicorn main:app --reload
-
-6. Open in browser:
-http://127.0.0.1:8000/docs
-
----
 
 ## Limitations
 
-- Uses simplified keyword-based retrieval instead of full legal database
-- No real API integration with government systems
+- Uses a simplified retrieval mechanism instead of fully integrated legal databases
+- No live integration with government systems or APIs
 - Proactive features are simulated
-- Not production-ready (demonstration purpose only)
+- Lacks authentication, monitoring, and full security layers
+- Not production-ready (demonstration prototype)
 
 ---
 
 ## Future Improvements
 
-- Integration with real APIs (e.g. digital.bridge)
-- Advanced RAG with vector databases
-- User authentication and personlization
-- Real-time notifications
+- Integration with real government platforms (e.g., digital.bridge)
+- Implementation of vector-based semantic search (advanced RAG)
+- User authentication and personalization
+- Real-time notification systems
+- Monitoring, logging, and audit mechanisms
+- Azerbaijani language optimization and domain adaptation
+
+---
+
+### Relation to AI Governance & Evaluation Framework
+
+This prototype is complemented by a separate document defining principles for evaluating AI systems in government contexts, including:
+
+- architectural standards
+- data governance and quality
+- security and privacy
+- ethical AI usage
+
+The prototype serves as a practical demonstration of how these principles can be implemented in a real system. 
 
 ---
 
 ## Purpose
 
-This project is developed as part of portfolio to explore:
+This project is part of a broader exploration of:
 
-- AI system architecture for government services 
-- LLM-based orchestration
-- data privacy considerations in AI systems
-#
+- AI system architecture for public sector applications
+- LLM-based orchestration and service design
+- Retrieval-based approaches for reliable AI responses
+- Responsible and secure use of AI in government environments
+
+---
