@@ -14,7 +14,7 @@ The system is designed as a conceptual and technical foundation for next-generat
 
 ---
 
-## Key capabilities
+## Key Capabilities
 
 - LLM-based intent understanding for natural language user queries
 - Orchestrator-based architecture for intelligent request routing
@@ -26,11 +26,23 @@ The system is designed as a conceptual and technical foundation for next-generat
 
 ---
 
-## System architecture
+## System Architecture
 
 User → API Layer (FastAPI) → Orchestrator → Service Agents → (RAG / Knowledge Base) → Response
 
-### Core components
+## Why Orchestrator-Based Architecture? 
+
+Compared to a monolithic chatbot, this approach enables.
+
+- Modular development of independent service agents
+- Easier integration with multiple government systems
+- Better scalability across agencies 
+- Clear separation of responsibilities (routing vs execution)
+
+This aligns with microservice principles and real-world government system design. 
+
+
+## Core Components
 
 - Orchestrator: 
     - Analyzes user intent using LLMs
@@ -48,6 +60,17 @@ User → API Layer (FastAPI) → Orchestrator → Service Agents → (RAG / Know
     - Applies basic preprocessing to remove or mask sensitive user data
 ---
 
+## RAG approach
+
+The system uses Retrieval-Augmented Generation (RAG) to improve response reliability.
+
+Instead of relying only on model knowledge, relevant information is retrieved from trusted sources and passed to the LLM during response generation. 
+
+This ensures:
+- More accurate and grounded answers 
+- Alignment with official/legal information
+- Reduced hallucination risk
+
 ## Example Use Cases
 
 - “Do I need to pay a fine if I lost my passport?”
@@ -55,6 +78,21 @@ User → API Layer (FastAPI) → Orchestrator → Service Agents → (RAG / Know
 - “What is the process for marriage registration?”
 
 ---
+
+## Failure Handling (Conceptual)
+
+Potential failure scenarios include:
+
+- Incorrect or low-confidence LLM responses
+- Missing or outdated data in retrieval layer
+- Service/API unavailability
+
+Mitigation approaches:
+
+- Confidence thresholds and fallback responses
+- Human-in-the-loop escalation for critical queries
+- Clear disclaimers for informational responses
+
 
 ## Technology Stack
 
