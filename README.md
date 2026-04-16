@@ -12,7 +12,6 @@ It demonstrates how modern AI technologies can be applied to:
 
 The system is designed as a conceptual and technical foundation for next-generation AI-powered public services.
 
----
 
 ## Key Capabilities
 
@@ -24,11 +23,11 @@ The system is designed as a conceptual and technical foundation for next-generat
 - Proactive service simulation (notifications and recommendations)
 - API-first backend design (FastAPI)
 
----
 
 ## System Architecture
 
 User → API Layer (FastAPI) → Orchestrator → Service Agents → (RAG / Knowledge Base) → Response
+
 
 ## Why Orchestrator-Based Architecture? 
 
@@ -58,7 +57,7 @@ This aligns with microservice principles and real-world government system design
     - Improves factual grounding and response reliability
 - Privacy Filter:
     - Applies basic preprocessing to remove or mask sensitive user data
----
+
 
 ## RAG approach
 
@@ -71,13 +70,13 @@ This ensures:
 - Alignment with official/legal information
 - Reduced hallucination risk
 
+
 ## Example Use Cases
 
 - “Do I need to pay a fine if I lost my passport?”
 - “How can I recognize my foreign diploma?”
 - “What is the process for marriage registration?”
 
----
 
 ## Failure Handling (Conceptual)
 
@@ -101,7 +100,6 @@ Mitigation approaches:
 - OpenAI API (LLM)
 - Lightweight RAG pipeline (designed for extensibility)
 
----
 
 ## Production-Oriented Design Considerations
 
@@ -122,7 +120,6 @@ Although this is a prototype, the system is designed with real-world government 
 - Lacks authentication, monitoring, and full security layers
 - Not production-ready (demonstration prototype)
 
----
 
 ## Future Improvements
 
@@ -133,7 +130,6 @@ Although this is a prototype, the system is designed with real-world government 
 - Monitoring, logging, and audit mechanisms
 - Azerbaijani language optimization and domain adaptation
 
----
 
 ### Relation to AI Governance & Evaluation Framework
 
@@ -146,7 +142,6 @@ This prototype is complemented by a separate document defining principles for ev
 
 The prototype serves as a practical demonstration of how these principles can be implemented in a real system. 
 
----
 
 ## Purpose
 
@@ -157,4 +152,3 @@ This project is part of a broader exploration of:
 - Retrieval-based approaches for reliable AI responses
 - Responsible and secure use of AI in government environments
 
----
